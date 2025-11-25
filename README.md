@@ -44,3 +44,34 @@ Ensure you have Python installed. Install the required libraries:
 
 ```bash
 pip install -r requirements.txt
+```
+
+### 3. Download Weights
+Download the pre-trained weights for Tiny-YOLO and place them in the `weights/` folder.
+* [Download YOLO Weights](https://pjreddie.com/darknet/yolo/)
+
+## 💻 Usage
+
+### Run on Video File
+```bash
+python main.py --source path/to/video.mp4
+```
+
+### Run on Webcam
+```bash
+python main.py --source 0
+```
+
+### Command Line Arguments
+* `--source`: Path to video file or `0` for webcam.
+* `--conf`: Confidence threshold for detection (default: 0.5).
+* `--output`: (Optional) Path to save the processed video.
+
+## 📊 Performance
+* **Detection Speed:** Approx. 30 FPS on GPU (varies by hardware).
+* **Accuracy:** Capable of distinguishing between lying down (intentional) and falling (rapid unintentional movement).
+
+## 🔮 Future Scope
+* Integration with GSM module to send SMS alerts.
+* Improving detection accuracy in low-light conditions.
+* Migrating to lighter models for Edge Device (Raspberry Pi) deployment.
