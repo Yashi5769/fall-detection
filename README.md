@@ -38,3 +38,9 @@ The pipeline follows a multi-stage approach to ensure accuracy and speed:
 ```bash
 git clone [https://github.com/Yashi5769/fall-detection.git](https://github.com/Yashi5769/fall-detection.git)
 cd fall-detection
+```
+### 2. Install Dependencies
+Ensure you have Python installed. Install the required libraries:
+
+```bash
+pip install -r requirements.txt
