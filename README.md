@@ -19,9 +19,6 @@ The pipeline follows a multi-stage approach to ensure accuracy and speed:
 4.  **Fall Logic:** The system analyzes the aspect ratio of the bounding box and the velocity of keypoints.
     * *Logic:* If the angle of the torso changes rapidly from vertical to horizontal and remains there, a "Fall" is registered.
 
-## 🎥 Demo
-*(Place a GIF or screenshot of your system in action here. For example: `![Demo](assets/demo.gif)`)*
-
 ## 🛠️ Tech Stack
 * **Language:** Python 3.x
 * **Object Detection:** Tiny-YOLO (v3/v4)
